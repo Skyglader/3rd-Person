@@ -13,7 +13,7 @@ namespace Invector.vCharacterController
         [Tooltip("Use this to rotate the character using the World axis, or false to use the camera axis - CHECK for Isometric Camera")]
         public bool rotateByWorld = false;
         [Tooltip("Check This to use sprint on press button to your Character run until the stamina finish or movement stops\nIf uncheck your Character will sprint as long as the SprintInput is pressed or the stamina finishes")]
-        public bool useContinuousSprint = true;
+        public bool useContinuousSprint = false;
         [Tooltip("Check this to sprint always in free movement")]
         public bool sprintOnlyFree = true;
         public enum LocomotionType
@@ -31,7 +31,7 @@ namespace Invector.vCharacterController
         [Tooltip("Use the currently Rigidbody Velocity to influence on the Jump Distance")]
         public bool jumpWithRigidbodyForce = false;
         [Tooltip("Rotate or not while airborne")]
-        public bool jumpAndRotate = true;
+        public bool jumpAndRotate = false;
         [Tooltip("How much time the character will be jumping")]
         public float jumpTimer = 0.3f;
         [Tooltip("Add Extra jump height, if you want to jump only with Root Motion leave the value with 0.")]
